@@ -11,7 +11,7 @@ using System.Threading.Tasks;
 
 namespace dotnet_rpg.Controllers
 {
-    [Authorize]
+    [Authorize(Roles = "Player,Admin")]
     [ApiController]
     [Route("[controller]")]
     public class CharacterController : ControllerBase
